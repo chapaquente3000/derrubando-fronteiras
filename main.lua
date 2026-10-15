@@ -16,12 +16,12 @@ function loop(frame)
 
     larg_tijolo = 10
     -- ui.rect(10, 10, 100, 50, 7)
-    --x0 = 15
-    --y0 = 15
-    --tijolo_larg = 10
-    --tijolo_alt = 10
-    --i = 1
-    --ui.rect(x0*i , x0*i + tijolo_larg, y0*i, y0*i+tijolo_alt, 7)
+    x0 = 15
+    y0 = 15
+    tijolo_larg = 10
+    tijolo_alt = 10
+    i = 1
+    ui.rect(x0*i , x0*i + tijolo_larg, y0*i, y0*i+tijolo_alt, 7)
     
     ui.spr(Sprites.heroi, 100, 100)    
 end 
