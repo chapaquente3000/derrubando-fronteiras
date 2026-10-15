@@ -3,7 +3,7 @@ require "sprites"
 player = {x = 100, y = 100, dir_x = 0, dir_y = 0, sprite = Sprites.heroi}
 --inimigos = []
 bala = {x = 100, y = 100, vx = 0, vy = 0, raio = 10} -- , sprite = Sprites.bala}
-balas = []
+balas = {}
 RAIO_BALA = 5
 function atirar(atirador)
     balas[#balas+1] = {x = atirador.x, y = atirador.x, vx = atirador.dir_x, vy = atirador.dir_y, 
