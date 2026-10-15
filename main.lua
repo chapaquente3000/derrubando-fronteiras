@@ -6,7 +6,7 @@ bala = {x = 100, y = 100, vx = 0, vy = 0, raio = 10} -- , sprite = Sprites.bala}
 balas = {}
 RAIO_BALA = 5
 function atirar(atirador)
-    balas[#balas+1] = {x = atirador.x, y = atirador.x, vx = atirador.dir_x, vy = atirador.dir_y, 
+    balas[#balas+1] = {x = atirador.x, y = atirador.y, vx = atirador.dir_x, vy = atirador.dir_y, 
                        raio = RAIO_BALA, cor = 4}
 end
 
@@ -57,6 +57,7 @@ function loop(frame)
     for i=1, #balas do
         balas[i].x = balas[i].x + balas[i].vx
         balas[i].y = balas[i].y + balas[i].vy
+        ui.print("i=[" .. i .. "] x=[" .. balas[i].x .. "] " .. "y [" .. balas[i].y .. "]", 12, 52, Palette.hex(0xFFFFFF))        
         -- circfill(balas[i].x, balas[i].y, balas[i].raio, balas[i].cor)
     end
 end 
