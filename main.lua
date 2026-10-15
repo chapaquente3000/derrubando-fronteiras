@@ -20,7 +20,7 @@ function loop(frame)
     ui.camera(0,0)
     ui.cls(Palette.hex(0x45283c))
     
-    ui.print("Balas [" .. #balas .. "]"+ , 12, 12, Palette.hex(0xFFFFFF))
+    ui.print("Balas [" .. #balas .. "]" , 12, 12, Palette.hex(0xFFFFFF))
 
     tijolo_larg = 16
     tijolo_alt = 16
