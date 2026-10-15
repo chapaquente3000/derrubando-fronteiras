@@ -60,6 +60,7 @@ function loop(frame)
         msg = "i=[" .. i .. "] x=[" .. balas[i].x .. "] " .. "y [" .. balas[i].y .. "]" ..
                     " cor=" .. balas[i].cor .. "]" .. "raio = [" .. balas[i].raio .. "]"
         ui.print(msg, 12, 52, Palette.hex(0xFFFFFF))        
-        ui.circfill(balas[i].x, balas[i].y, balas[i].raio, balas[i].cor)
+        --ui.circfill(balas[i].x, balas[i].y, balas[i].raio, balas[i].cor)
+        ui.circfill(200, 50, 20, 10)
     end
 end 
