@@ -58,7 +58,8 @@ function loop(frame)
         balas[i].x = balas[i].x + balas[i].vx
         balas[i].y = balas[i].y + balas[i].vy
         ui.print("i=[" .. i .. "] x=[" .. balas[i].x .. "] " .. "y [" .. balas[i].y .. "]" ..
-                    " cor=" .. balas[i].cor .. "]" .. "raio = [" .. bala[i].raio .. "]"  , 12, 52, Palette.hex(0xFFFFFF))        
+                    " cor=" .. balas[i].cor .. "]",           -- .. "raio = [" .. bala[i].raio .. "]"  , 
+                   12, 52, Palette.hex(0xFFFFFF))        
         -- circfill(balas[i].x, balas[i].y, balas[i].raio, balas[i].cor)
     end
 end 
