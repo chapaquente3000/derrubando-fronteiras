@@ -1,6 +1,6 @@
 require "palette"
 require "sprites"
-
+player = {x = 100, y = 100, sprite = Sprites.heroi}
 function loop(frame)
     
     for i = 1, #Palette do
@@ -20,5 +20,12 @@ function loop(frame)
     x0 = 50
     y0 = 60
     ui.rectfill(x0, y0, x0+tijolo_larg, y0+tijolo_alt, 3)
-    ui.spr(Sprites.heroi, 100, 100)    
+    ui.spr(player.sprite, player.x, player.y)    
+
+    if ui.btn(LEFT) then
+      player.x = player.x - 1
+    elseif ui.btn(RIGHT) then
+      player.x = player.x + 1
+    end
+
 end 
