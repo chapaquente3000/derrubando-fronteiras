@@ -1,9 +1,9 @@
 require "palette"
 require "sprites"
 player = {x = 100, y = 100, dir_x = 0, dir_y = 0, sprite = Sprites.heroi}
-inimigos = []
+--inimigos = []
 bala = {x = 100, y = 100, vx = 0, vy = 0, raio = 10} -- , sprite = Sprites.bala}
-balas = []
+--balas = []
 function loop(frame)    
     for i = 1, #Palette do
         local color = Palette[i]
