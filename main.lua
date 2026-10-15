@@ -1,8 +1,12 @@
 require "palette"
 require "sprites"
-player = {x = 100, y = 100, sprite = Sprites.heroi}
-function loop(frame)
-    
+player = {x = 100, y = 100, dir_x 0, dir_y = 0, sprite = Sprites.heroi}
+inimigos = [
+   
+]
+bala = {x = 100, y = 100, vx = 0, vy = 0, raio = 10} -- , sprite = Sprites.bala}
+balas = [
+function loop(frame)    
     for i = 1, #Palette do
         local color = Palette[i]
         ui.palset(i - 1, color)
@@ -12,7 +16,7 @@ function loop(frame)
     ui.camera(0,0)
     ui.cls(Palette.hex(0x45283c))
     
-    ui.print("Derrube as fronteirass!", 32, 32, Palette.hex(0xFFFFFF))
+    --ui.print("Derrube as fronteirass!", 32, 32, Palette.hex(0xFFFFFF))
 
     tijolo_larg = 16
     tijolo_alt = 16
@@ -23,14 +27,19 @@ function loop(frame)
     ui.spr(player.sprite, player.x, player.y)    
 
     if ui.btn(LEFT) then
-      player.x = player.x - 1
+      player.dir_x = -1 
     elseif ui.btn(RIGHT) then
-      player.x = player.x + 1
+      player.dir_x = 1 
     end
     if ui.btn(UP) then
-      player.y = player.y - 1
+      player.dir_y = -1 
     elseif ui.btn(DOWN) then
-      player.y = player.y + 1
+      player.dir_y = 1         
     end
 
+    player.x = player.x + player.dir_x
+    player.y = player.y + player.dir_y
+    
+    --if player.x > X_MAX
+    --elseif
 end 
