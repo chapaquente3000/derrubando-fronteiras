@@ -26,7 +26,8 @@ function loop(frame)
       player.x = player.x - 1
     elseif ui.btn(RIGHT) then
       player.x = player.x + 1
-    elseif ui.btn(UP) then
+    end
+    if ui.btn(UP) then
       player.y = player.y - 1
     elseif ui.btn(DOWN) then
       player.y = player.y + 1
