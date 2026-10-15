@@ -20,7 +20,7 @@ function loop(frame)
     tijolo_larg = 100
     tijolo_alt = 100
     i = 1
-    ui.rect(x0*i , x0*i + tijolo_larg, y0*i, y0*i+tijolo_alt, 7)
+    ui.rect(x0*i , x0*i + tijolo_larg, y0*i, y0*i+tijolo_alt, 8)
     x0 = 50
     y0 = 60
     x1 = 90
