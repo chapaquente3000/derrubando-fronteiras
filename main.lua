@@ -1,6 +1,6 @@
 require "palette"
 require "sprites"
-player = {x = 100, y = 100, dir_x 0, dir_y = 0, sprite = Sprites.heroi}
+player = {x = 100, y = 100, dir_x = 0, dir_y = 0, sprite = Sprites.heroi}
 inimigos = [
    
 ]
