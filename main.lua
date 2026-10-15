@@ -57,6 +57,6 @@ function loop(frame)
     for i=1, #balas do
         balas[i].x = balas[i].x + balas[i].vx
         balas[i].y = balas[i].y + balas[i].vy
-        circfill(balas[i].x, balas[i].y, balas[i].raio, balas[i].cor)
+        -- circfill(balas[i].x, balas[i].y, balas[i].raio, balas[i].cor)
     end
 end 
