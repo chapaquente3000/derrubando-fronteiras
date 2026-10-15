@@ -25,7 +25,7 @@ function loop(frame)
     x0 = 50
     y0 = 60
     x1 = 90
-    y0 = 100
+    y1 = 100
     ui.rectfill(x0, y0, x1, y1, 8) -- ui.rectfill(50, 50, 80, 80, 8)
     ui.spr(Sprites.heroi, 100, 100)    
 end 
