@@ -24,6 +24,8 @@ function loop(frame)
     ui.rectfill(x0, y0, x0+tijolo_larg, y0+tijolo_alt, 3)
     ui.spr(player.sprite, player.x, player.y)    
 
+    player.dir_x = 0
+    player.dir_y = 0
     if ui.btn(LEFT) then
       player.dir_x = -1 
     elseif ui.btn(RIGHT) then
