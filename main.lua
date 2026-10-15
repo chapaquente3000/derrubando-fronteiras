@@ -12,7 +12,7 @@ function loop(frame)
     ui.camera(0,0)
     ui.cls(Palette.hex(0x45283c))
     
-    ui.print("Derrube as fronteiras!", 32, 32, Palette.hex(0xFFFFFF))
+    ui.print("Derrube as fronteirass!", 32, 32, Palette.hex(0xFFFFFF))
 
     larg_tijolo = 10
     -- ui.rect(10, 10, 100, 50, 7)
