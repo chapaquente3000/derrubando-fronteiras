@@ -18,8 +18,8 @@ function loop(frame)
     -- ui.rect(10, 10, 100, 50, 7)
     x0 = 15
     y0 = 15
-    tijolo_larg = 10
-    tijolo_alt = 10
+    tijolo_larg = 100
+    tijolo_alt = 100
     i = 1
     ui.rect(x0*i , x0*i + tijolo_larg, y0*i, y0*i+tijolo_alt, 7)
     
