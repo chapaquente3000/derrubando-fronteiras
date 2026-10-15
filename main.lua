@@ -14,16 +14,11 @@ function loop(frame)
     
     ui.print("Derrube as fronteirass!", 32, 32, Palette.hex(0xFFFFFF))
 
-    x0 = 15
-    y0 = 15
-    tijolo_larg = 45
-    tijolo_alt = 45
+    tijolo_larg = 16
+    tijolo_alt = 16
     i = 1
-    --ui.rect(x0*i , x0*i + tijolo_larg, y0*i, y0*i+tijolo_alt, 8)
     x0 = 50
     y0 = 60
-    --x1 = 90
-    --y1 = 100
-    ui.rectfill(x0, y0, x0+tijolo_larg, y0+tijolo_alt, 8)
+    ui.rectfill(x0, y0, x0+tijolo_larg, y0+tijolo_alt, 3)
     ui.spr(Sprites.heroi, 100, 100)    
 end 
