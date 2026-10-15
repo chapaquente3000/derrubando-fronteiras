@@ -15,7 +15,6 @@ function loop(frame)
     ui.print("Derrube as fronteirass!", 32, 32, Palette.hex(0xFFFFFF))
 
     larg_tijolo = 10
-    -- ui.rect(10, 10, 100, 50, 7)
     x0 = 15
     y0 = 15
     tijolo_larg = 100
@@ -26,7 +25,6 @@ function loop(frame)
     y0 = 60
     x1 = 90
     y1 = 100
-    ui.rectfill(x0, y0, x1, y1, 8)
-    --ui.rectfill(50, 50, 80, 80, 8)
+    --ui.rectfill(x0, y0, x1, y1, 8)
     ui.spr(Sprites.heroi, 100, 100)    
 end 
