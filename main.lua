@@ -1,7 +1,6 @@
 require "palette"
 require "sprites"
 
-heroi = Sprites.heroi2
 function loop(frame)
     
     for i = 1, #Palette do
@@ -14,5 +13,5 @@ function loop(frame)
     ui.cls(Palette.hex(0x45283c))
     
     ui.print("Derrube fronteiras!", 32, 32, Palette.hex(0xFFFFFF))
-    ui.spr(heroi, 100, 100)    
+    ui.spr(Sprites.heroi2, 100, 100)    
 end 
