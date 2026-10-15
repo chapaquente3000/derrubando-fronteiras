@@ -3,7 +3,13 @@ require "sprites"
 player = {x = 100, y = 100, dir_x = 0, dir_y = 0, sprite = Sprites.heroi}
 --inimigos = []
 bala = {x = 100, y = 100, vx = 0, vy = 0, raio = 10} -- , sprite = Sprites.bala}
---balas = []
+balas = []
+RAIO_BALA = 5
+function atirar(atirador)
+    balas[#balas+1] = {x = atirador.x, y = atirador.x, vx = atirador.dir_x, vy = atirador.dir_y, 
+                       raio = RAIO_BALA, cor = 4}
+end
+
 function loop(frame)    
     for i = 1, #Palette do
         local color = Palette[i]
@@ -39,7 +45,18 @@ function loop(frame)
 
     player.x = player.x + player.dir_x
     player.y = player.y + player.dir_y
-    
+
+    if ui.btnp(BTN_X) then
+       atirar(player)
+    end
+
+    -- desenhar()
     --if player.x > X_MAX
     --elseif
+
+    for i=1, #balas do
+        balas[i].x = balas[i].x + balas[i].vx
+        balas[i].y = balas[i].y + balas[i].vy
+        circfill(balas[i].x, balas[i].y, balas[i].raio, balas[i].cor)
+    end
 end 
