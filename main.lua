@@ -22,6 +22,6 @@ function loop(frame)
     tijolo_alt = 100
     i = 1
     ui.rect(x0*i , x0*i + tijolo_larg, y0*i, y0*i+tijolo_alt, 7)
-    
+    ui.rectfill(50, 50, 80, 80, 8)
     ui.spr(Sprites.heroi, 100, 100)    
 end 
