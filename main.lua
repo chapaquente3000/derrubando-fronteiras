@@ -7,7 +7,7 @@ balas = {}
 RAIO_BALA = 5
 function atirar(atirador)
     balas[#balas+1] = {x = atirador.x, y = atirador.y, vx = atirador.dir_x, vy = atirador.dir_y, 
-                       raio = RAIO_BALA, cor = 4}
+                       raio = 5, cor = 4}
 end
 
 function loop(frame)    
